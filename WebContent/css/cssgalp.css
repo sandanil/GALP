@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-color: #ffa600;
+}
+div:FIRST-CHILD {
+	text-align: justify;
+	background-color: #ff8000;
+}
+#uno{
+	background-color: #ff8000;
+}
+#dos{
+	background-color: #ffa600;
+}

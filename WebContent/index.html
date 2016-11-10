@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Galp</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/cssgalp.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/scriptgalp.js"></script>
+</head>
+<body>
+
+<div class="row">
+	<div class="col-md-3"><img alt="logo" height="150" src="http://preciogas.com/sites/all/themes/images/galp200_renovado.png"></div>
+	<div class="col-md-9"><h1 id="titulo"><b>BIENVENIDO A NUESTRO SERVICIO ONLINE</b></h1></div>
+</div>
+
+<div class="col-md-12 text-center">
+	
+		<br>
+		<h2>Elije el sistema de pago:</h2>
+		<br>
+		<button id="botontarjeta">TARJETA</button>
+		<button id="botonefectivo">EFECTIVO</button>
+		<button id="cancelar">CANCELAR</button>
+	
+</div>
+
+<div class="col-md-12 text-center">
+	<form id="formtarjeta" action="Validar" method="post" style="display: none">
+		<br>
+		<b>Pago con Tarjeta</b><br>
+		<input name="usuario" type="text" placeholder="Usuario">
+		<br>
+		<input name="matricula" type="text" placeholder="Matrícula Vehículo">
+		<br>
+		<input name="numtarjeta" type="text" placeholder="Número Tarjeta">
+		<br>
+		<input name="password" type="password" placeholder="Contraseña">
+		<br>
+		<input name="enviar" type="submit" placeholder="Aceptar">
+	</form>
+	<form id="formefectivo" action="Validar" method="post" style="display: none">
+		<br>
+		<b>Pago en Efectivo</b><br>
+		<input name="usuario" type="text" placeholder="Usuario">
+		<br>
+		<input name="matricula" type="text" placeholder="Matrícula Vehículo">
+		<br>
+		<input name="password" type="password" placeholder="Contraseña">
+		<br>
+		<input name="enviar" type="submit" placeholder="Aceptar">
+	</form>
+</div>
+
+</body>
+</html>
